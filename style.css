@@ -5,17 +5,24 @@
 
  
 }
-
 body{
     background-color: #defafe;
 }
-
+.container{
+    background-color: var(--color-lightorange);
+    margin:auto;
+    margin-top: 70px;
+    width: 1400px;
+    height: 500px;
+    border-radius: 10px;
+    padding-top:130px; 
+ }
 #title{
  color: #f7fbfd;
  font-size: 30px;
  position: relative;
  left: 100px;
- bottom: 1010px;
+ bottom: 970px;
  z-index: 100%;
  text-transform: lowercase;
  font-family: 'Poppins', sans-serif;
@@ -24,7 +31,7 @@ body{
 }
 .right{
     position: relative;
-    bottom: 1070px;
+    bottom: 1040px;
     left: 700px;
     width: 800px;
     color: #f7fbfd;
@@ -37,35 +44,39 @@ body{
 .paragraph{
    width: 250px;
    position: relative;
-   bottom: 1200px;
+   bottom: 1160px;
    left:300px;
    color: #fcf5cd;
 
 }
-.container{
-    background-color: var(--color-lightorange);
-    margin:auto;
-    margin-top: 70px;
-    width: 1400px;
-    height: 500px;
-    border-radius: 10px;
-    padding-top:130px; 
- }
+
 button{
     background-color: transparent;
     border-color: #fcda6c;
     border-style: solid;
     border-width: 2px;
     border-radius: 100px;
-    position: relative;
-    bottom: 760px;
-    left: 1100px;
     color: #ffeb8c;
     width: 80px;
     height: 80px;
+}
+    
+.btn{
+    position: relative;
+    bottom: 805px;
+    left: 1150px;
     border-right-style: none;
     border-right-color: none;
 }
+
+.btn1{
+    position: relative;
+    bottom: 810px ;
+    left: 200px;
+    border-left-style: none;
+    border-right-color: none;
+}
+
  #top{
      display: flex;
      flex-direction: row;
@@ -131,6 +142,15 @@ button{
     top: 10px;
     
  }
+ #prev{
+    width: 200px;
+    position: relative;
+    right: 150px;
+    top: 10px;
+    text-orientation:unset;
+  
+    
+ }
  #all{
      position: relative;
      bottom: 50px;
@@ -150,6 +170,17 @@ button{
      
  }
  #triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 12.5px solid #fffeda;
+    border-top: 6.25px solid transparent;
+    border-bottom: 6.25px solid transparent; 
+    position: relative;
+    left: 30px;
+    bottom: 5px;
+ }
+ #triangle1 {
+     transform: rotate(-180deg);
     width: 0; 
     height: 0; 
     border-left: 12.5px solid #fffeda;
@@ -231,3 +262,124 @@ img{
     height: 350px;
 }
 
+@media screen and (max-width: 576px){
+
+    .container{
+        background-color: var(--color-lightorange);
+        margin:auto;
+        width: 450px;
+        height:580px;
+        border-radius: 10px;
+        
+     }
+
+     img{
+
+        margin-top: 100px;
+        margin-left:  118px;;
+        width: 300px;
+        height: 250px;
+    }
+    #title{
+        color: #f7fbfd;
+        font-size: 13px;
+        position: relative;
+        left: 70px;
+        bottom: 1200px;
+        z-index: 100%;
+        text-transform: lowercase;
+        font-family: 'Poppins', sans-serif;
+        width: 400px;
+               }
+       .right{
+        position: relative;
+               bottom: 1200px;
+               left: 300px;
+               width: 300px;
+               color: #f7fbfd;
+               font-size: 13px;
+               font-family: 'Poppins', sans-serif;
+       }
+       
+    
+    button{
+        background-color: transparent;
+        border-color: #fcda6c;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 100px;
+        color: #ffeb8c;
+        width: 80px;
+        height: 80px;
+    }
+    .btn{
+        position: relative;
+        left: 300px;
+        bottom: 500px;
+        border-right-style: none;
+        border-right-color: none;
+    }
+    
+    .btn1{
+        position: relative;
+        bottom: 502px ;
+        left: 100px;
+        border-left-style: none;
+        border-right-color: none;
+    }
+    #circle{
+        background-color: transparent;
+        width: 120px;
+        height: 120px;
+        border-color: #fcda6c;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 100px;
+        position: relative;
+        bottom: 1020px;
+        margin-left: 100px;
+        
+    }
+    #find{
+        position: relative;
+        bottom: 60px;
+        left: 100px;
+        width: 200px;
+     }
+     #account{
+        position: relative;
+        bottom: 60px;
+        left: 50px;
+     }
+     #cart{
+        position: relative;
+        bottom: 60px;
+        left: 40px;
+     }
+     .line{
+        transform: rotate(-90deg);
+        position: relative;
+        bottom: 27px;
+        left: 70px;
+        width: .5px;
+        height: 50px;
+        border-color: #f8e076;
+           
+    }
+    .line1{
+       transform: rotate(-90deg);
+       position: relative;
+       left: 68px;
+       bottom:22px;
+       width: .5px;
+       height: 50px;
+       border-color: #f8e076;     
+   }
+   .paragraph{
+    display: none;
+    }
+ 
+}
+
+
+    
