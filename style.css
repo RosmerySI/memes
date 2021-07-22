@@ -267,8 +267,8 @@ img{
     .container{
         background-color: var(--color-lightorange);
         margin:auto;
-        width: 450px;
-        height:580px;
+        width: 300px;
+        height:500px;
         border-radius: 10px;
         
      }
@@ -276,30 +276,30 @@ img{
      img{
 
         margin-top: 100px;
-        margin-left:  118px;;
-        width: 300px;
-        height: 250px;
+        margin-left:  105px;;
+        width: 210px;
+        height: 230px;
     }
     #title{
         color: #f7fbfd;
-        font-size: 13px;
+        font-size: 10px;
         position: relative;
         left: 70px;
-        bottom: 1200px;
+        bottom: 1160px;
         z-index: 100%;
         text-transform: lowercase;
         font-family: 'Poppins', sans-serif;
-        width: 400px;
+        width: 300px;
                }
-       .right{
+    .right{
         position: relative;
-               bottom: 1200px;
-               left: 300px;
-               width: 300px;
-               color: #f7fbfd;
-               font-size: 13px;
-               font-family: 'Poppins', sans-serif;
-       }
+        bottom: 1180px;
+        left: 200px;
+        width: 200px;
+        color: #f7fbfd;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
        
     
     button{
@@ -309,12 +309,12 @@ img{
         border-width: 2px;
         border-radius: 100px;
         color: #ffeb8c;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
     .btn{
         position: relative;
-        left: 300px;
+        left: 220px;
         bottom: 500px;
         border-right-style: none;
         border-right-color: none;
@@ -322,64 +322,104 @@ img{
     
     .btn1{
         position: relative;
-        bottom: 502px ;
-        left: 100px;
+        bottom: 500px ;
+        left: 60px;
         border-left-style: none;
         border-right-color: none;
     }
     #circle{
         background-color: transparent;
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         border-color: #fcda6c;
         border-style: solid;
         border-width: 2px;
         border-radius: 100px;
         position: relative;
-        bottom: 1020px;
-        margin-left: 100px;
+        bottom: 990px;
+        margin-left: 80px;
         
     }
     #find{
-        position: relative;
-        bottom: 60px;
-        left: 100px;
-        width: 200px;
+        display: none;
      }
      #account{
         position: relative;
         bottom: 60px;
-        left: 50px;
+        left: 60px;
      }
      #cart{
         position: relative;
         bottom: 60px;
-        left: 40px;
+        left: 60px;
      }
      .line{
         transform: rotate(-90deg);
         position: relative;
-        bottom: 27px;
-        left: 70px;
+        bottom: 15px;
+        left: 50px;
         width: .5px;
-        height: 50px;
+        height: 30px;
         border-color: #f8e076;
            
     }
     .line1{
        transform: rotate(-90deg);
        position: relative;
-       left: 68px;
-       bottom:22px;
+       left: 48px;
+       bottom:10px;
        width: .5px;
-       height: 50px;
+       height: 30px;
        border-color: #f8e076;     
    }
    .paragraph{
     display: none;
     }
- 
+    #next{
+        display: none;
+        
+     }
+     #prev{
+        display:none;
+      
+        
+     }
+    #top{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        bottom: 120px;
+        width: 200px;
+        height: 50px;
+    }
+    p{
+        position: relative;
+        bottom: 20px;
+        right: 10px;
+    }
+    #triangle {
+        width: 0; 
+        height: 0; 
+        border-left: 12.5px solid #fffeda;
+        border-top: 6.25px solid transparent;
+        border-bottom: 6.25px solid transparent; 
+        position: relative;
+        left: 20px;
+        top: 2px;
+     }
+     #triangle1 {
+        transform: rotate(-180deg);
+        width: 0; 
+        height: 0; 
+        border-left: 12.5px solid #fffeda;
+        border-top: 6.25px solid transparent;
+        border-bottom: 6.25px solid transparent; 
+        position: relative;
+        left: 15px;
+        top: 2px;
+     }
 }
+
 
 
     
