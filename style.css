@@ -8,7 +8,7 @@
 body{
     background-color: #defafe;
 }
-.container{
+#container{
     background-color: var(--color-lightorange);
     margin:auto;
     margin-top: 70px;
@@ -166,7 +166,7 @@ button{
      border-radius: 100px;
      position: relative;
      bottom: 660px;
-     margin-left: 650px;
+     margin-left: 680px;
      
  }
  #triangle {
@@ -264,7 +264,7 @@ img{
 
 @media screen and (max-width: 576px){
 
-    .container{
+    #container{
         background-color: var(--color-lightorange);
         margin:auto;
         width: 300px;

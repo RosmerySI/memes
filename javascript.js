@@ -3,7 +3,8 @@ let thirdmove = document.getElementsByClassName("thirdmove");
 let second = document.getElementById("second");
 let first = document.getElementById("first");
 let images;
-const request = new Request("http://api.giphy.com/v1/gifs/search?q=nba&api_key=EJgC8gC5E8r6gtEbuNf46POFykTvVW7X&limit=12");
+
+const request = new Request("https://api.giphy.com/v1/gifs/search?q=nba&api_key=EJgC8gC5E8r6gtEbuNf46POFykTvVW7X&limit=12");
 const url = request.url;
 const method = request.method;
 const credentials = request.credentials;
@@ -35,9 +36,10 @@ const bodyUsed = request.bodyUsed;
   var j = 2;
   var k = 3;
   function nextGif(){
-    third.className = "thirdmove";
+    
     if (i < images.length){
         i = i+1;
+        third.className = "thirdmove";
     }else{
         i = 1;
     }
@@ -54,4 +56,59 @@ const bodyUsed = request.bodyUsed;
       k = 1;
     }
     first.innerHTML = "<img src="+images[k-1]+">";
-}
+  
+  
+
+
+    let colors = [ "#e4a502", "#fa5f2f", "#bf81cc"] ;
+    
+    let button= document.getElementById("button");
+
+    button.addEventListener("click", function(){
+
+      var randomColor= colors[Math.floor(Math.random()*colors.length)]
+
+      let container= document.getElementById("container");
+
+      container.style.background = randomColor
+
+    })
+  }
+  
+  function prevGif(){
+    if (i > 1 ){
+        i = i-1;
+    }else{
+        i = images.length;
+    }
+    third.innerHTML = "<img src="+images[i-1]+">";
+    if (j > 1 ){
+      j = j-1;
+    }else{
+      j = images.length;
+    }
+    second.innerHTML = "<img src="+images[j-1]+">";
+    if (k > 1){
+      k = k-1;
+    }else{
+      k = images.length;
+    }
+    first.innerHTML = "<img src="+images[k-1]+">";
+
+    
+    let colors = [ "#e4a502", "#fa5f2f", "#bf81cc"] ;
+    
+    let button1= document.getElementById("button1");
+
+    button1.addEventListener("click", function(){
+
+      var randomColor= colors[Math.floor(Math.random()*colors.length)]
+
+      let container= document.getElementById("container");
+
+      container.style.background = randomColor
+
+    })
+  }
+
+  
